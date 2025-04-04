@@ -28,7 +28,23 @@ public:
     }
 
     // TODO: Function to start the game and traverse the tree based on user input
-    void playGame(){}
+    void playGame() {
+        Node<T>* curr = root;
+        char in;
+        while (curr->left || curr->right) {
+            //curr->data->print();
+            if (!curr->right) {
+                cin >> in;
+                if (in=='y') {
+                    curr=curr->left;
+                }else {
+                    curr = curr->right;
+                }
+            }else {
+                curr=curr->left;
+            }
+        }
+    }
 };
 
 #endif // GAMEDECISIONTREE_H

@@ -2,45 +2,44 @@
 # CS210 Data Structures SP25
 ## Programming Assignment 2: Text-Based RPG Using Decision Trees
 
-### **Student Name:** `[Your Name]`  
-### **Student ID:** `[Your ID]`  
+### **Student Name:** `Hamish Arora`  
+### **Student ID:** `131233177`  
 
 ---
 
 ## **1. Project Overview**
-(Provide a brief summary of your RPG game. Describe how it uses a decision tree and how the player interacts with it.)
-
-Example:
-> This project implements a text-based RPG using a **binary decision tree**. Each game event is represented as a node, and the player progresses by choosing between two paths at each stage. The storyline is loaded from an external text file (`story.txt`), which is parsed to construct the decision tree. The game ends when a leaf node (with `-1` as left and right children) is reached.
-
+In this project, I created a decision tree game using a binary tree structure. You can progress through the story by typing y or n
 ---
 
 ## **2. Folder & File Structure**
 (Explain the role of each file in your project.)
 
-- **`main.cpp`** → `[Describe its function]`  
-- **`GameDecisionTree.h`** → `[Explain what this file contains]`  
-- **`Node.h`** → `[Explain what this file contains]`  
-- **`Story.h`** → `[Explain what this file contains]`  
-- **`story.txt`** → `[Explain how the game loads story events from this file]`  
+- **`main.cpp`** → `Loads and runs the game`  
+- **`GameDecisionTree.h`** → `This object is a binary tree, and consists of Nodes. It has functions to load the game, and run it`  
+- **`Node.h`** → `The node has a story event, and pointers to link it to the  next events`  
+- **`Story.h`** → `Contains the event, as well as node number data`  
+- **`story.txt`** → `Input file for game`  
 
 ---
 
 ## **3. Decision Tree Construction**
 (Explain how the decision tree is built from the `story.txt` file.)
 
-- How are `Story` objects created from the text file?  
-- How are nodes linked based on left and right event numbers?  
-- What happens if an event has `-1` as left or right children?  
+- Story objects are created through their constructor, and stored in a Node.
+- After parsing through the file, we'll have a list of Nodes.
+- Then, I traverse the list, connecting the Nodes to the Story object specified leftNumber and rightNumber
+
+-NOTE: -1 indicates NULL/no connection
+-If a Story event has a -1 as the rightNumber only, then it'll act as an intermediate node
+-You can use this to fill in the details before a shared node
 
 ---
 
 ## **4. Game Traversal**
-(Describe how the game moves through the decision tree.)
-
-- How does user input determine the path taken?  
-- What happens when the player reaches a leaf node?  
-- Explain the special case where multiple events lead to the same outcome.  
+-The player plays by typing 'y' or 'n'
+Once they finish the game, the program ends.
+If they reach a special, shared node, then they get to choose from its options.
+So, a shared node enables you to get the same ending from 2 different paths
 
 ---
 
@@ -69,9 +68,12 @@ Example:
 ## **8. Big-O Analysis of Core Methods**
 (Analyze the complexity of key methods.)
 
-- **Loading the tree from the file** → `O(?)`  
-- **Searching for an event in the tree** → `O(?)`  
-- **Game traversal efficiency** → `O(?)`  
+- **Loading the tree from the file** → `O(?)`- You read through n events
+- And, in the worst case, for each node(O(n)), you search the list of nodes twice(2n=O(n))
+- Therefore, it's O(n)*O(n) = O(n^2)
+- **Searching for an event in the tree** → `O(n)`  as the tree isn't balanced
+- **Game traversal efficiency** → `O(n)`  Though it depends on the height of the tree, in the worst case, all events are sequential
+- Yielding O(n) time
 
 ---
 
@@ -84,13 +86,7 @@ Example:
 ---
 
 ## **10. Justification of Additional Features (If Any)**
-(If you added extra features, describe them and explain why.)
-
-Example:
-> I added a **save/load feature** so players can resume the game later. This was done by writing the current node’s event number to a file and reading it when restarting.
-
----
-
+None
 ## **Final Notes**
 - **README is mandatory** → `(-10 points deduction if missing).`  
 - **Code must compile and run** → `(Code that does not run will receive a 0).`  
