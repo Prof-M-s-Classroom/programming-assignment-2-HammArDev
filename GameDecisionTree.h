@@ -18,7 +18,14 @@ public:
     GameDecisionTree() : root(nullptr) {}
 
     // TODO: Function to load story data from a text file and build the binary tree
-    void loadStoryFromFile(const std::string& filename, char delimiter){}
+    void loadStoryFromFile(const std::string& filename, char delimiter){
+        string word, test;
+        fstream fin(filename);
+        while(fin>>test){
+            get(fin, word, delimiter);
+            cout<<word<<endl;
+        }
+    }
 
     // TODO: Function to start the game and traverse the tree based on user input
     void playGame(){}
