@@ -1,6 +1,15 @@
-1 | You wake up in a forest clearing. There are two paths. | 2 | 3
-2 | You follow the path to the left and encounter a river. | 4 | 5
-3 | You go right and find an old cabin. | 5 | 6
-4 | You swim across the river and find a treasure chest. | -1 | -1
-5 | You find a hidden passageway that leads to a secret room. | 7 | -1
-6 | The cabin is empty. You find a trapdoor leading downwards. | -1
+1 | You're starting to take your walk. Suddenly, you feel a drop of water hit your eyebrow. Do you turn back(y/n)? | 2 | 3
+2 | It was just a drizzle. Feed your exercise needs by a HIIT workout(y/n)? | 7 | 5
+3 | You continued, and the drizzle got you slightly drenched-> While walking, you see a man trying to clean up a huge mess. Help him(y/n)? | 4 | 6
+7 | Nature rewards your hard efforts with serotonin. You cut through your stack of homework :) | -1 | -1
+5 | Feeling uneasy, you try to study-> You can't focus, and end up procrastinating by watching Youtube until 12 PM | -1 | -1
+4 | He was suffering from a panic attack-> You decide to drive him to the hospital, and run into traffic-> Should you run to the hospital or wait it out(y\n for run) | 8 | 9
+6 | Passing the man, You finish your walk-> You loop back, and it seems like the man is frozen cleaning one spot. Help him?(y/n)? | 13 | 5
+8 | Panting, you both make it to the hospital. He makes a successful recovery | -1 | -1
+9 | You drive, and the man feels hungry. Drive to Rubios(y/n)? | 14 | 10
+10 | It turns to dusk. The man starts to choke, step on the gas or stop and help out(y for gas)? | 8 | 11
+11 | Your passenger hits their head. Check on them or continue driving(y for checking)? | 12 | 15
+12 | You open the door, but get hit by a car. You wake up in the hospital, and find out that the person who hit you saved both your lives, but you missed 1 year while in a coma. | -1 | -1
+13 | You're able to talk the man down, and find out that they're playing Mariokart in the hospital. You have a good time there :)
+14 | He reaches for a snack in his pocket(y to continue) | 10 | -1
+15 | He wakes up, but is still panicking(y to continue) | 13 | -1
