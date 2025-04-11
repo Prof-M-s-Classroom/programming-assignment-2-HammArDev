@@ -53,15 +53,36 @@ So, a shared node enables you to get the same ending from 2 different paths
 ---
 
 ## **6. Debugging Process (Errors & Fixes)**
-(Describe one or more debugging challenges you faced and how you fixed them.)
-
-Example:
-> Initially, my program was crashing when trying to access an uninitialized node. I realized it was because I was not properly checking for `nullptr` before accessing child nodes, so I added a check to prevent accessing uninitialized memory.
-
+When I tried to test the intermediate nodes, I found out that they weren't read properly.
+Thus, the node had a NULL left attribute. So, I checked the input file, and it was formatted incorrectly.
+After fixing the format, the intermediate nodes worked
 ---
 
 ## **7. Sample Output & Walkthrough**
-(Provide an example of how the game runs, including player input.)
+You're starting to take your walk. Suddenly, you feel a drop of water hit your eyebrow. Do you turn back(y/n)?
+n
+
+You continued, and the drizzle got you slightly drenched-> While walking, you see a man trying to clean up a huge mess.
+Help him(y/n)?
+y
+
+He was suffering from a panic attack-> You decide to drive him to the hospital, and run into traffic-> Should you run t
+o the hospital or wait it out(y\n for run)
+n
+
+You drive, and the man feels hungry. Drive to Rubios(y/n)?
+y
+
+He reaches for a snack in his pocket(c to continue)
+It turns to dusk. The man starts to choke, step on the gas or stop and help out(y for gas)?
+c
+
+Your passenger hits their head. Check on them or continue driving(y for checking)?
+n
+
+He wakes up, but is still panicking(c to continue)
+You're able to talk the man down, and find out that they're playing Mariokart in the hospital. You have a good time the
+re :)
 
 ---
 
@@ -79,7 +100,9 @@ Example:
 
 ## **9. Edge Cases & Testing**
 (Describe at least one edge case you tested and its outcome.)
-
+-I tested the scenario where the player reached a leaf node, and the game ended as I expected
+-I tested intermediate nodes. One wasn't printing, and from that, I found out that I forgot the print statement
+-Lastly, I tested the nodes that shared a child. They worked :)
 Example:
 > I tested a scenario where the player reaches a dead-end (leaf node) and ensured the program correctly ends the game.
 

@@ -10,6 +10,6 @@
 10 | It turns to dusk. The man starts to choke, step on the gas or stop and help out(y for gas)? | 8 | 11
 11 | Your passenger hits their head. Check on them or continue driving(y for checking)? | 12 | 15
 12 | You open the door, but get hit by a car. You wake up in the hospital, and find out that the person who hit you saved both your lives, but you missed 1 year while in a coma. | -1 | -1
-13 | You're able to talk the man down, and find out that they're playing Mariokart in the hospital. You have a good time there :)
-14 | He reaches for a snack in his pocket(y to continue) | 10 | -1
-15 | He wakes up, but is still panicking(y to continue) | 13 | -1
+13 | You're able to talk the man down, and find out that they're playing Mariokart in the hospital. You have a good time there :) | -1 | -1
+14 | He reaches for a snack in his pocket(c to continue) | 10 | -1
+15 | He wakes up, but is still panicking(c to continue) | 13 | -1

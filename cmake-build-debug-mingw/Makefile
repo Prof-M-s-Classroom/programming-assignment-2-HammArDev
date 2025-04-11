@@ -128,30 +128,6 @@ CS210PA2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS210PA2.dir\build.make CMakeFiles/CS210PA2.dir/build
 .PHONY : CS210PA2/fast
 
-Story.obj: Story.cpp.obj
-.PHONY : Story.obj
-
-# target to build an object file
-Story.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS210PA2.dir\build.make CMakeFiles/CS210PA2.dir/Story.cpp.obj
-.PHONY : Story.cpp.obj
-
-Story.i: Story.cpp.i
-.PHONY : Story.i
-
-# target to preprocess a source file
-Story.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS210PA2.dir\build.make CMakeFiles/CS210PA2.dir/Story.cpp.i
-.PHONY : Story.cpp.i
-
-Story.s: Story.cpp.s
-.PHONY : Story.s
-
-# target to generate assembly for a file
-Story.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS210PA2.dir\build.make CMakeFiles/CS210PA2.dir/Story.cpp.s
-.PHONY : Story.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -185,9 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CS210PA2
-	@echo ... Story.obj
-	@echo ... Story.i
-	@echo ... Story.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

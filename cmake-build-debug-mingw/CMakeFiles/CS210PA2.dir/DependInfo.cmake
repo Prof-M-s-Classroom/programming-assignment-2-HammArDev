@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/sanga/programming-assignment-2-HammArDev/Story.cpp" "CMakeFiles/CS210PA2.dir/Story.cpp.obj" "gcc" "CMakeFiles/CS210PA2.dir/Story.cpp.obj.d"
   "C:/Users/sanga/programming-assignment-2-HammArDev/main.cpp" "CMakeFiles/CS210PA2.dir/main.cpp.obj" "gcc" "CMakeFiles/CS210PA2.dir/main.cpp.obj.d"
   )
 
